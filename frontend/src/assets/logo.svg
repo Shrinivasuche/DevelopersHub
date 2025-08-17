@@ -1,0 +1,57 @@
+<svg width="240" height="80" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient definitions for black and white theme -->
+  <defs>
+    <linearGradient id="whiteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#666666;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#999999;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Main background -->
+  <rect x="0" y="0" width="240" height="80" rx="40" ry="40" fill="url(#blackGrad)" stroke="#666666" stroke-width="1" filter="url(#shadow)"/>
+  
+  <!-- Central hub icon -->
+  <circle cx="40" cy="40" r="20" fill="url(#whiteGrad)" stroke="#000000" stroke-width="2"/>
+  <circle cx="40" cy="40" r="8" fill="#000000"/>
+  
+  <!-- Connected nodes representing developers -->
+  <circle cx="15" cy="20" r="6" fill="url(#grayGrad)" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="15" cy="60" r="6" fill="url(#grayGrad)" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="65" cy="20" r="6" fill="url(#grayGrad)" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="65" cy="60" r="6" fill="url(#grayGrad)" stroke="#ffffff" stroke-width="1"/>
+  
+  <!-- Connection lines to hub -->
+  <line x1="20" y1="25" x2="32" y2="35" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <line x1="20" y1="55" x2="32" y2="45" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <line x1="60" y1="25" x2="48" y2="35" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <line x1="60" y1="55" x2="48" y2="45" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Code symbols in the nodes -->
+  <text x="15" y="24" font-family="Monaco, monospace" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">{}</text>
+  <text x="15" y="64" font-family="Monaco, monospace" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">&lt;/&gt;</text>
+  <text x="65" y="24" font-family="Monaco, monospace" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">fn</text>
+  <text x="65" y="64" font-family="Monaco, monospace" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">$</text>
+  
+  <!-- Main logo text -->
+  <text x="85" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#ffffff" letter-spacing="0.5px">DEVELOPER</text>
+  <text x="130" y="55" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="url(#whiteGrad)" letter-spacing="1px" stroke="#000000" stroke-width="0.5">HUB</text>
+  
+  <!-- Decorative pulse rings around hub -->
+  <circle cx="40" cy="40" r="25" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <circle cx="40" cy="40" r="30" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Additional geometric elements for modern look -->
+  <rect x="220" y="15" width="8" height="8" fill="#ffffff" opacity="0.6" transform="rotate(45 224 19)"/>
+  <rect x="215" y="55" width="6" height="6" fill="#666666" opacity="0.8" transform="rotate(45 218 58)"/>
+</svg>
