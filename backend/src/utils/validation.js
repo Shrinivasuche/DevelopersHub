@@ -3,6 +3,11 @@ const validator = require("validator");
 const validateSignUpData = (req) => {
     const { firstName, lastName, email, password } = req.body;
 
+    // validation of given data
+    console.log("Request Body:", req.body);
+    console.log("Email:", email);
+    console.log("Type of email:", typeof email);
+
     if(!firstName || !lastName){
         throw new Error("Name is not valid")
     } 

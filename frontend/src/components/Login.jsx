@@ -94,7 +94,7 @@ const Login = () => {
                     <fieldset className="fieldset my-4">
                         <legend className="fieldset-legend text-white/90">Password</legend>
                         <input 
-                            type="text" 
+                            type="password" 
                             value={password}
                             className="input bg-white/20 border-white/30 text-white placeholder-white/60 focus:bg-white/30 focus:border-white/50" 
                             placeholder="Enter your password"
